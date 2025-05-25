@@ -1,32 +1,53 @@
-# MyRitu 🌸
+# MyRitu 🌸 - Your Personal Menstrual Ritu (Cycle) Companion
 
-MyRitu is a Streamlit application designed to help women track their menstrual cycles, understand hormonal changes, log symptoms, and gain insights into their reproductive health. It also features conceptual integrations with Hugging Face AI models for image analysis and personalized chat.
+MyRitu is a user-friendly Streamlit application designed to empower women by helping them track their menstrual Ritu (cycle), understand hormonal fluctuations, log symptoms, and gain personalized insights into their reproductive health across all life stages. It features an AI-powered chat assistant to provide general information and support.
 
-## ✨ Features
+## ✨ Key Features
 
 *   **Secure User Authentication:** Sign up, log in, and log out functionality to protect your personal data.
-*   **Personalized Profile:** Store and update your average cycle length, period length, medical history, and more.
-*   **Cycle Tracking Dashboard:** At-a-glance view of your current cycle phase, predicted next period, and fertile window.
-*   **Interactive Calendar:** Visually track past and predicted periods, ovulation, fertile windows. Log new period dates and symptoms.
-*   **Hormone Hub:** Educational section detailing key hormones (Estrogen, Progesterone, FSH, LH) and their roles during different cycle phases.
-*   **Cycle Insights:** Visualizations of cycle length variations and symptom trends over time (e.g., mood, pain levels).
-*   **Vision Model Integration (Conceptual):** Example of how to upload an image and send it to a Hugging Face vision model (e.g., for image captioning of a meal or skin concern).
-*   **CycleChat (Conceptual):** An AI chat assistant that can answer general questions about menstrual health, "personalized" by providing your anonymized cycle summary as context to a Hugging Face Small Language Model (SLM).
-*   **Data Persistence:** Your data is saved locally in an SQLite database.
-*   **Themed Interface:** A user-friendly interface with a pink/feminine theme.
+*   **Comprehensive Profile:** Store and update your full name, birth date (for age-specific insights), average Ritu length, period length, last period date, current life stage (Puberty, Reproductive, Perimenopause, Menopause, Post-menopause), medical conditions, medications, and personal preferences.
+    *   ![Profile Setup](demo_images/image2.png)
+*   **Personalized Dashboard (Home):** At-a-glance view of your current Ritu phase, predicted next period, fertile window, and dominant hormones for the day.
+    *   ![Home Dashboard](demo_images/image3.png)
+*   **Interactive Calendar & Logger:** Visually track past and predicted periods, ovulation, and fertile windows. Easily log new period dates, symptoms (mood, flow, pain, bloating, skin issues, fatigue), and personal notes.
+    *   ![Calendar View](demo_images/image4.png)
+    *   ![Symptom Logger](demo_images/image5.png)
+*   **Hormone Hub:** Educational section detailing key hormones (Estrogen, Progesterone, FSH, LH) and their roles and typical levels during different Ritu phases.
+*   **Ritu Insights:** Visualizations of your Ritu length variations over time, mood frequency, and pain level trends, complete with easy-to-understand descriptions.
+*   **MyRitu AI Chat:** Engage with an empathetic AI assistant (powered by a Hugging Face LLM like Zephyr-7B-Beta) that uses your anonymized profile and Ritu data summary to provide:
+    *   General information about menstrual health.
+    *   Tips and tricks tailored to your age, life stage, and logged information.
+    *   A caring and receptive conversational partner.
+    *   *(Disclaimer: The AI chat is for informational purposes only and not a substitute for professional medical advice.)*
+    *   ![AI Chat Interface](demo_images/image6.png)
+*   **Data Management:**
+    *   Locally persistent data using an SQLite database.
+    *   Option to permanently delete all your account data.
+*   **User-Friendly Interface:** Clean design with pink accents, optimized for readability. Horizontal navigation for easy access to all features.
+    *   ![Login Screen](demo_images/image1.png)
 
-## 🛠️ Setup & Installation
+## 🛠️ Tech Stack
+
+*   **Frontend & Backend:** Streamlit
+*   **Database:** SQLite (for local storage)
+*   **AI Language Model:** Hugging Face Inference API (e.g., `HuggingFaceH4/zephyr-7b-beta`)
+*   **Core Libraries:** Pandas, Plotly, Streamlit-Calendar, Streamlit-Option-Menu, Requests, Bcrypt, python-dotenv.
+
+## 🚀 Getting Started (Local Development)
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://your-github-repo-url/femcycle-harmony.git
-    cd femcycle-harmony
+    git clone https://github.com/yourusername/MyRitu_harmony.git # Replace with your repo URL
+    cd MyRitu_harmony
     ```
 
-2.  **Create a Virtual Environment (Recommended):**
+2.  **Create and Activate a Virtual Environment:**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    # On Windows:
+    venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
     ```
 
 3.  **Install Dependencies:**
@@ -34,60 +55,43 @@ MyRitu is a Streamlit application designed to help women track their menstrual c
     pip install -r requirements.txt
     ```
 
-4.  **(Optional) Hugging Face API Token:**
-    To use the Vision Model and CycleChat features, you'll need a Hugging Face API token.
-    *   Go to [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
-    *   Create a new token (read access is usually sufficient for inference).
-    *   You will be prompted to enter this token within the app when accessing these features.
-    *   **Important:** Keep your API token secure and do not commit it to your repository. The app asks for it at runtime.
+4.  **Set Up Hugging Face API Token:**
+    *   Create a `.env` file in the project root (`MyRitu_harmony/.env`).
+    *   Add your Hugging Face API token:
+        ```env
+        HF_API_TOKEN="your_actual_hugging_face_api_token_here"
+        ```
+    *   Obtain a token from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) (a "read" token is usually sufficient).
+    *   **Important:** The `.env` file is listed in `.gitignore` and should **never** be committed to your repository.
 
-## 🚀 Running the Application
-
-1.  Ensure your virtual environment is activated.
-2.  Navigate to the project's root directory (`femcycle-harmony/`).
-3.  Run the Streamlit application:
+5.  **Run the Application:**
     ```bash
     streamlit run main.py
     ```
-4.  The application will open in your default web browser.
+    The app will open in your default web browser.
 
-## 🤖 Hugging Face API Integration Instructions
+## ☁️ Deployment (Streamlit Community Cloud)
 
-This application demonstrates how to connect to Hugging Face Inference Endpoints for AI-powered features.
+1.  Ensure your code is pushed to a **public GitHub repository**. Your `.gitignore` file must prevent `.env` and `MyRitu.db` from being uploaded.
+2.  Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+3.  Deploy a new app, selecting your repository, branch (e.g., `main`), and `main.py` as the main file.
+4.  **Set Secrets:** In your deployed app's settings on Streamlit Community Cloud, add your `HF_API_TOKEN` as a secret. The key should be `HF_API_TOKEN` and the value your actual token.
+5.  **Database Note:** For persistent data on Streamlit Community Cloud, the default SQLite setup will be ephemeral (data resets on app restarts). For long-term data storage in a deployed app, consider integrating a cloud-based database solution (e.g., Supabase, Neon).
 
-**General Steps for Hugging Face Inference API:**
+## 🔒 Privacy & Data
 
-1.  **Obtain an API Token:** As mentioned in the setup, get your token from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
-2.  **Choose a Model:** Browse [huggingface.co/models](https://huggingface.co/models) to find suitable models.
-    *   For **Vision tasks** (e.g., image captioning, object detection), filter by task. Example: `Salesforce/blip-image-captioning-base`.
-    *   For **Text Generation/Chat (SLM)**, filter by task (e.g., Text Generation, Conversational). Example: `mistralai/Mistral-7B-Instruct-v0.1` or `microsoft/DialoGPT-medium`.
-3.  **Construct the API URL:** The URL is typically `https://api-inference.huggingface.co/models/YOUR_MODEL_ID`.
-    *   Replace `YOUR_MODEL_ID` with the ID of the chosen model (e.g., `mistralai/Mistral-7B-Instruct-v0.1`).
-4.  **Make the Request:**
-    *   Use an HTTP POST request.
-    *   Include an `Authorization` header: `Bearer YOUR_HF_API_TOKEN`.
-    *   The request body (`data` or `json` parameter) depends on the model.
-        *   **Vision Models:** Often expect raw image bytes in the `data` parameter.
-        *   **Text Models:** Expect a JSON payload with an `inputs` field, and optionally a `parameters` field for things like `max_new_tokens`, `temperature`, etc. The structure of `inputs` can vary (e.g., a string, a dictionary for conversational history).
-5.  **Process the Response:** The API usually returns a JSON response. The structure of this response also varies by model.
-
-**In this App:**
-
-*   **Vision Model (`tabs/tab_insights.py`):**
-    *   The app uses a predefined model ID (e.g., `Salesforce/blip-image-captioning-base`). You can change this.
-    *   It takes an uploaded image, sends its bytes to the API.
-    *   Displays the `generated_text` from the response.
-*   **Chat Model (SLM) (`tabs/tab_chat.py`):**
-    *   Uses a predefined model ID (e.g., `mistralai/Mistral-7B-Instruct-v0.1`).
-    *   Constructs a prompt including a summary of your profile and cycle history.
-    *   Sends this prompt as `inputs` to the API.
-    *   Displays the `generated_text` from the response.
-    *   **Note:** This is *in-context learning*, not fine-tuning. The model is not retrained on your data; your data is simply provided as part of the prompt for context.
+*   **Authentication:** User accounts are protected by hashed passwords.
+*   **Local Storage:** All user data, including profile information, Ritu logs, and chat history, is stored in an SQLite database (`MyRitu.db`) **locally on the device where the app is run** (during local development).
+*   **Data Deletion:** Users have the option to permanently delete their account and all associated data from the local database via the Settings page.
+*   **AI Chat:** When using the MyRitu Chat, a summary of your anonymized profile and recent Ritu data is sent to the Hugging Face API to provide context to the language model. No chat history is sent, only the current query and the generated context. Chat messages are logged locally.
 
 ## ⚠️ Disclaimer
 
-This application is for informational and educational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+MyRitu is intended for informational and tracking purposes only. It is **not a substitute for professional medical advice, diagnosis, or treatment.** Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or your health. Do not disregard professional medical advice or delay in seeking it because of something you have read or interpreted from this application.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
+Contributions, feedback, and suggestions are welcome! Please feel free to open an issue or submit a pull request.
+
+---
+*(Optional: Add a "Future Enhancements" section if you have plans for more features.)*
