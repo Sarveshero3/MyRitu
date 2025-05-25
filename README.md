@@ -18,26 +18,28 @@ MyRitu is a user-friendly Streamlit application designed to empower women by hel
 
 ## ✨ Key Features
 
-*   **Secure User Authentication:** Sign up, log in, and protect your personal data.
-    *   *Login Screen:*
-        ![Login Screen](demo_images/image1.png)
-*   **Comprehensive Profile:** Store and update vital information including your current life stage to tailor your MyRitu experience.
-    *   *Profile Setup/Edit:*
-        ![Profile Setup](demo_images/image2.png)
+*   **Secure User Authentication & Comprehensive Profile:** Sign up, log in, and protect your personal data. Store and update vital information including your current life stage to tailor your MyRitu experience.
+
+    | Login Screen                      | Profile Setup/Edit                     |
+    | :--------------------------------: | :------------------------------------: |
+    | ![Login Screen](demo_images/image1.png) | ![Profile Setup](demo_images/image2.png) |
+
 *   **Personalized Dashboard (Home):** At-a-glance view of your current Ritu phase, predictions, and daily hormonal insights.
     *   *Home Dashboard:*
         ![Home Dashboard](demo_images/image3.png)
-*   **Interactive Calendar:** Visually track your Ritu with ease.
+
+*   **Interactive Calendar:** Visually track your Ritu and important dates with ease.
     *   *Calendar View:*
         ![Calendar View](demo_images/image4.png)
-*   **Symptom Logger:** Log new period dates, symptoms (mood, flow, pain, etc.), and personal notes.
-    *   *Symptom Logger:*
-        ![Symptom Logger](demo_images/image5.png)
+
+*   **Symptom Logging & AI Chat Support:** Log symptoms and engage with an empathetic AI assistant for general information and tips.
+
+    | Symptom Logger                     | AI Chat Interface                  |
+    | :--------------------------------: | :--------------------------------: |
+    | ![Symptom Logger](demo_images/image5.png) | ![AI Chat Interface](demo_images/image6.png) |
+
 *   **Hormone Hub:** Educational section detailing key hormones and their roles.
 *   **Ritu Insights:** Visualizations of your Ritu length variations, mood frequency, and pain level trends, with clear descriptions.
-*   **MyRitu AI Chat:** Engage with an empathetic AI assistant using your anonymized data for tailored, general information.
-    *   *AI Chat Interface:*
-        ![AI Chat Interface](demo_images/image6.png)
 *   **Data Management & User-Friendly Interface.**
 
 ---
