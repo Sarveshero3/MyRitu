@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+bcrypt
+streamlit-calendar
+huggingface_hub
+requests
+Pillow
+python-dotenv
+numpy
+streamlit-option-menu # Add this for horizontal navigation

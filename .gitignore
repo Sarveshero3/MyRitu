@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+venv/
+*.db
+*.sqlite3
+# Add other files/folders you don't want to track
