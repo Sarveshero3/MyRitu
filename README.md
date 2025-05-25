@@ -11,33 +11,33 @@
   <a href="https://sarveshero3.github.io/MyRitu/" target="_blank" style="background-color: #E57396; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em;">
     🚀 Access MyRitu App
   </a>
-  <p style="font-size: 0.9em; margin-top: 10px;"></sup></p>
+  <p style="font-size: 0.9em; margin-top: 10px;">(This link redirects to the Streamlit application)</sup></p>
 </div>
 
 MyRitu is a user-friendly Streamlit application designed to empower women by helping them track their menstrual Ritu (cycle), understand hormonal fluctuations, log symptoms, and gain personalized insights into their reproductive health across all life stages. It features an AI-powered chat assistant to provide general information and support.
 
 ## ✨ Key Features
 
-*   **Secure User Authentication & Comprehensive Profile:** Sign up, log in, and protect your personal data. Store and update vital information including your current life stage to tailor your MyRitu experience.
-
-    | Login Screen                      | Profile Setup/Edit                     |
-    | :--------------------------------: | :------------------------------------: |
-    | <img src="demo_images/image1.png" alt="Login Screen" width="300"/> | <img src="demo_images/image2.png" alt="Profile Setup" width="300"/> |
-
+*   **Secure User Authentication:** Sign up, log in, and protect your personal data.
+    *   *Login Screen:*
+        ![Login Screen](demo_images/image1.png)
+*   **Comprehensive Profile:** Store and update vital information including your current life stage to tailor your MyRitu experience.
+    *   *Profile Setup/Edit:*
+        ![Profile Setup](demo_images/image2.png)
 *   **Personalized Dashboard (Home):** At-a-glance view of your current Ritu phase, predictions, and daily hormonal insights.
     *   *Home Dashboard:*
-        <img src="demo_images/image3.png" alt="Home Dashboard" width="600"/>
-*   **Interactive Calendar & Logger:** Visually track your Ritu and log symptoms with ease.
-
-    | Calendar View                      | Symptom Logger                     |
-    | :--------------------------------: | :--------------------------------: |
-    | <img src="demo_images/image4.png" alt="Calendar View" width="300"/> | <img src="demo_images/image5.png" alt="Symptom Logger" width="300"/> |
-
+        ![Home Dashboard](demo_images/image3.png)
+*   **Interactive Calendar:** Visually track your Ritu with ease.
+    *   *Calendar View:*
+        ![Calendar View](demo_images/image4.png)
+*   **Symptom Logger:** Log new period dates, symptoms (mood, flow, pain, etc.), and personal notes.
+    *   *Symptom Logger:*
+        ![Symptom Logger](demo_images/image5.png)
 *   **Hormone Hub:** Educational section detailing key hormones and their roles.
 *   **Ritu Insights:** Visualizations of your Ritu length variations, mood frequency, and pain level trends, with clear descriptions.
 *   **MyRitu AI Chat:** Engage with an empathetic AI assistant using your anonymized data for tailored, general information.
     *   *AI Chat Interface:*
-        <img src="demo_images/image6.png" alt="AI Chat Interface" width="600"/>
+        ![AI Chat Interface](demo_images/image6.png)
 *   **Data Management & User-Friendly Interface.**
 
 ---
