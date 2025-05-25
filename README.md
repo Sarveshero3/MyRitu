@@ -4,12 +4,12 @@ MyRitu is a user-friendly Streamlit application designed to empower women by hel
 
 ## ✨ Key Features
 
-*   **Secure User Authentication:** Sign up, log in, and log out functionality to protect your personal data.
-    *   *Login Screen:*
-        ![Login Screen](demo_images/image1.png)
-*   **Comprehensive Profile:** Store and update vital information to tailor your MyRitu experience.
-    *   *Profile Setup/Edit:*
-        ![Profile Setup](demo_images/image2.png)
+*   **Secure User Authentication & Comprehensive Profile:** Sign up, log in, and protect your personal data. Store and update vital information including your current life stage to tailor your MyRitu experience.
+
+    | Login Screen                      | Profile Setup/Edit                     |
+    | :--------------------------------: | :------------------------------------: |
+    | ![Login Screen](demo_images/image1.png) | ![Profile Setup](demo_images/image2.png) |
+
 *   **Personalized Dashboard (Home):** At-a-glance view of your current Ritu phase, predictions, and daily hormonal insights.
     *   *Home Dashboard:*
         ![Home Dashboard](demo_images/image3.png)
@@ -101,6 +101,8 @@ MyRitu is intended for informational and tracking purposes only. It is **not a s
 This application is built with love and deep respect for all women. To the mothers who nurture, the professionals who build, the young women discovering their strength, and every woman navigating the intricate dance of her body's rhythms – you are powerful, resilient, and inspiring. May MyRitu be a small, helpful companion on your unique journey, offering a little more understanding and connection to your own well-being.
 
 Keep shining! ✨
+
+I Love You, Mom! ❤️
 
 ---
 
