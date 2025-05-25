@@ -11,7 +11,7 @@
   <a href="https://sarveshero3.github.io/MyRitu/" target="_blank" style="background-color: #E57396; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em;">
     🚀 Access MyRitu App
   </a>
-  <p style="font-size: 0.9em; margin-top: 10px;">(This link redirects to the Streamlit application)</sup></p>
+  <p style="font-size: 0.9em; margin-top: 10px;"></sup></p>
 </div>
 
 MyRitu is a user-friendly Streamlit application designed to empower women by helping them track their menstrual Ritu (cycle), understand hormonal fluctuations, log symptoms, and gain personalized insights into their reproductive health across all life stages. It features an AI-powered chat assistant to provide general information and support.
